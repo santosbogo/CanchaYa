@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CanchaYa</string>
+    <string name="tennis">Tennis</string>
+    <string name="paddle">Paddle</string>
+    <string name="football">Football</string>
+    <string name="volleyball">Volleyball</string>
+
+
+</resources>
