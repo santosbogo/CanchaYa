@@ -1,11 +1,9 @@
 package com.example.canchaya.components
 
-import androidx.compose.material3.ExtendedFloatingActionButton
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.stringResource
 import com.example.canchaya.screens.sports.data.SportEnum
 
 @Composable
@@ -16,9 +14,9 @@ fun SportButton(
     val name = sport.sportName
     val icon = painterResource(sport.iconResId)
 
-    ExtendedFloatingActionButton(
-        icon = { Icon( icon, contentDescription = name) },
-        text = { Text(name) },
+    FloatingActionButton(
         onClick = { onClick(sport) }
-    )
+    ) {
+        Icon( icon, contentDescription = name)
+    }
 }
