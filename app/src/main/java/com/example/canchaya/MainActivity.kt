@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.Modifier
+import com.example.canchaya.navigation.BottomBar
 import com.example.canchaya.navigation.NavHostComposable
 import com.example.canchaya.ui.theme.CanchaYaTheme
 
@@ -19,7 +20,10 @@ class MainActivity : ComponentActivity() {
             val navController = rememberNavController()
             CanchaYaTheme {
                 Scaffold(
-                    modifier = Modifier.fillMaxSize()
+                    modifier = Modifier.fillMaxSize(),
+                    bottomBar = {
+                        BottomBar(navController::navigate)
+                    }
                 ) { innerPadding ->
                     NavHostComposable(innerPadding, navController)
                 }
