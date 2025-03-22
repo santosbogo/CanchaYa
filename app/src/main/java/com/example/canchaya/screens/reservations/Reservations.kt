@@ -5,5 +5,5 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun Reservations() {
-    Text("Reservations data")
+    Text("When a user makes a reservation, it will be shown here")
 }

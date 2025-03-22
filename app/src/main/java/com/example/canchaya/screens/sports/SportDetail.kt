@@ -6,5 +6,5 @@ import com.example.canchaya.screens.sports.data.SportEnum
 
 @Composable
 fun SportDetail(sport: SportEnum) {
-    Text("Canchas disponibles para ${sport.sportName}")
+    Text("Available courts for: ${sport.sportName}")
 }
