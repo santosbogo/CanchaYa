@@ -9,38 +9,29 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.canchaya.screens.SportsScreen
-import com.example.canchaya.screens.data.SportEnum
+import com.example.canchaya.screens.sports.SportDetail
+import com.example.canchaya.screens.sports.Sports
+import com.example.canchaya.screens.sports.data.SportEnum
 
 @Composable
-fun NavHostComposable(
-    innerPadding: PaddingValues,
-    navController: NavHostController
-) {
+fun NavHostComposable(innerPadding: PaddingValues, navController: NavHostController) {
+
     NavHost(
         navController = navController,
-        startDestination = "sports",
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(innerPadding)
-            .padding(16.dp)
+        startDestination = CanchaYaScreen.Sports.name,
+        modifier = Modifier.fillMaxSize().padding(innerPadding).padding(20.dp)
     ) {
-        composable(route = "sports") {
-            SportsScreen(
-                onSportSelected = { sport ->
-                    navController.navigate("detail/${sport.name}")
-                }
+
+        composable(route = CanchaYaScreen.Sports.name) {
+            Sports(
+                onClick = { navController.navigate(it) }
             )
         }
 
-        composable(route = "detail/{sportName}") { backStackEntry ->
+        composable("{sportName}") { backStackEntry ->
             val sportName = backStackEntry.arguments?.getString("sportName")
-            SportDetailScreen(sportName = sportName)
+            val sport = SportEnum.valueOf(sportName ?: SportEnum.TENNIS.name)
+            SportDetail(sport)
         }
     }
-}
-
-@Composable
-fun SportDetailScreen(sportName: String?) {
-    val selectedSport = SportEnum.entries.firstOrNull { it.name == sportName }
 }

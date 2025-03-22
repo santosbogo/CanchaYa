@@ -18,7 +18,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController()
             CanchaYaTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(
+                    modifier = Modifier.fillMaxSize()
+                ) { innerPadding ->
                     NavHostComposable(innerPadding, navController)
                 }
             }

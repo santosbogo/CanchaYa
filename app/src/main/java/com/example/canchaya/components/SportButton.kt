@@ -6,14 +6,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import com.example.canchaya.screens.data.SportEnum
+import com.example.canchaya.screens.sports.data.SportEnum
 
 @Composable
 fun SportButton(
     sport: SportEnum,
     onClick: (SportEnum) -> Unit
 ) {
-    val name = stringResource(sport.nameResId)
+    val name = sport.sportName
     val icon = painterResource(sport.iconResId)
 
     ExtendedFloatingActionButton(
