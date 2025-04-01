@@ -1,4 +1,4 @@
-package com.example.canchaya.screens.sports
+package com.canchaya.screens.sports
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.lazy.grid.items
@@ -7,8 +7,8 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
-import com.example.canchaya.components.SportButton
-import com.example.canchaya.screens.sports.data.SportEnum
+import com.canchaya.components.SportButton
+import com.canchaya.screens.sports.data.SportEnum
 
 @Composable
 fun Sports(

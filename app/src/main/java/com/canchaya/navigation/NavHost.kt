@@ -1,4 +1,4 @@
-package com.example.canchaya.navigation
+package com.canchaya.navigation
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,11 +9,11 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.canchaya.screens.reservations.Reservations
-import com.example.canchaya.screens.sports.SportDetail
-import com.example.canchaya.screens.sports.Sports
-import com.example.canchaya.screens.sports.data.SportEnum
-import com.example.canchaya.screens.user.User
+import com.canchaya.screens.reservations.Reservations
+import com.canchaya.screens.sports.SportDetail
+import com.canchaya.screens.sports.Sports
+import com.canchaya.screens.sports.data.SportEnum
+import com.canchaya.screens.user.User
 
 @Composable
 fun NavHostComposable(innerPadding: PaddingValues, navController: NavHostController) {

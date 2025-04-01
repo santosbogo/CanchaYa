@@ -1,4 +1,4 @@
-package com.example.canchaya.navigation
+package com.canchaya.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check

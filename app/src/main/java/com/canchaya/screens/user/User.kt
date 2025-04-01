@@ -1,4 +1,4 @@
-package com.example.canchaya.screens.user
+package com.canchaya.screens.user
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

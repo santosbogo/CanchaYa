@@ -1,4 +1,4 @@
-package com.example.canchaya
+package com.canchaya
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,9 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.navigation.compose.rememberNavController
 import androidx.compose.ui.Modifier
-import com.example.canchaya.navigation.BottomBar
-import com.example.canchaya.navigation.NavHostComposable
-import com.example.canchaya.ui.theme.CanchaYaTheme
+import com.canchaya.navigation.BottomBar
+import com.canchaya.navigation.NavHostComposable
+import com.canchaya.ui.theme.CanchaYaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.canchaya.navigation
+package com.canchaya.navigation
 
 enum class CanchaYaScreen {
     Sports,

@@ -1,4 +1,4 @@
-package com.example.canchaya.ui.theme
+package com.canchaya.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

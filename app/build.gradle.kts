@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.canchaya"
+    namespace = "com.canchaya"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.canchaya"
+        applicationId = "com.canchaya"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

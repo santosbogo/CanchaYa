@@ -1,4 +1,4 @@
-package com.example.canchaya.components
+package com.canchaya.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.canchaya.screens.sports.data.SportEnum
+import com.canchaya.screens.sports.data.SportEnum
 
 @Composable
 fun SportButton(

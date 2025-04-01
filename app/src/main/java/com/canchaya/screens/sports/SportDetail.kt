@@ -1,8 +1,8 @@
-package com.example.canchaya.screens.sports
+package com.canchaya.screens.sports
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import com.example.canchaya.screens.sports.data.SportEnum
+import com.canchaya.screens.sports.data.SportEnum
 
 @Composable
 fun SportDetail(sport: SportEnum) {

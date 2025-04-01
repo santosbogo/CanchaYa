@@ -1,7 +1,7 @@
-package com.example.canchaya.screens.sports.data
+package com.canchaya.screens.sports.data
 
-import com.example.canchaya.R
-import com.example.canchaya.navigation.CanchaYaScreen
+import com.canchaya.navigation.CanchaYaScreen
+import com.canchaya.R
 
 enum class SportEnum (
     val sportName: String,
