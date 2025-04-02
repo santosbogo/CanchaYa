@@ -9,20 +9,27 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.canchaya.Auth0ViewModel
 import com.canchaya.screens.reservations.Reservations
+import com.canchaya.screens.security.Login
 import com.canchaya.screens.sports.SportDetail
 import com.canchaya.screens.sports.Sports
 import com.canchaya.screens.sports.data.SportEnum
 import com.canchaya.screens.user.User
 
 @Composable
-fun NavHostComposable(innerPadding: PaddingValues, navController: NavHostController) {
+fun NavHostComposable(innerPadding: PaddingValues, navController: NavHostController, mainViewModel: Auth0ViewModel) {
 
     NavHost(
         navController = navController,
-        startDestination = CanchaYaScreen.Sports.name,
+        startDestination = "Login",
+//        startDestination = CanchaYaScreen.Sports.name,
         modifier = Modifier.fillMaxSize().padding(innerPadding).padding(20.dp)
     ) {
+
+        composable (route = "Login") {
+            Login(mainViewModel)
+        }
 
         composable (route = CanchaYaScreen.Sports.name) {
             Sports(

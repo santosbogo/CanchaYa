@@ -1,4 +1,7 @@
 <resources>
+
+
+
     <string name="app_name">CanchaYa</string>
     <string name="tennis">Tennis</string>
     <string name="paddle">Paddle</string>
@@ -8,4 +11,17 @@
     <string name="rugby">Rugby</string>
     <string name="field_hockey">Field Hockey</string>
     <string name="badminton">Badminton</string>
+
+
+<!--    Auth0:-->
+    <string name="auth0_domain">dev-6e4v2e5ptfoyds74.us.auth0.com</string>
+    <string name="auth0_client_id">rBgrsaYqLcbYkMVcl0dvm2pvX4bLxLB8</string>
+    <string name="initial_title">Welcome to the app!</string>
+    <string name="logged_in_title">You’re logged in!</string>
+    <string name="logged_out_title">You’re logged out.</string>
+    <string name="log_in_button">Log In</string>
+    <string name="log_out_button">Log Out</string>
+    <string name="name_label">Name</string>
+    <string name="email_label">Email</string>
+    <string name="user_icon_url">https://images.ctfassets.net/23aumh6u8s0i/5hHkO5DxWMPxDjc2QZLXYf/403128092dedc8eb3395314b1d3545ad/icon-user.png</string>
 </resources>

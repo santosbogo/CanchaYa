@@ -12,9 +12,17 @@ import com.canchaya.navigation.BottomBar
 import com.canchaya.navigation.NavHostComposable
 import com.canchaya.ui.theme.CanchaYaTheme
 
+
+import androidx.activity.viewModels
+
+
 class MainActivity : ComponentActivity() {
+    private val mainViewModel: Auth0ViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        mainViewModel.setContext(this)
+
         enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
@@ -25,7 +33,7 @@ class MainActivity : ComponentActivity() {
                         BottomBar(navController::navigate)
                     }
                 ) { innerPadding ->
-                    NavHostComposable(innerPadding, navController)
+                    NavHostComposable(innerPadding, navController, mainViewModel)
                 }
             }
         }

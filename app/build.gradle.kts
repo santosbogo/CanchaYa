@@ -15,6 +15,11 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        manifestPlaceholders += mapOf(
+            "auth0Domain" to "@string/com_auth0_domain",
+            "auth0Scheme" to "@string/com_auth0_scheme"
+        )
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -57,5 +62,10 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //auth0
+    implementation("com.auth0.android:auth0:+")
+    implementation("com.auth0.android:jwtdecode:+")
+    implementation ("io.coil-kt:coil-compose:+")
 
 }
